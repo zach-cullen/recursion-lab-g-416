@@ -33,5 +33,5 @@ function addUpTo(array, index) {
   // return addUpTo sub index + array[index]
   // if index is zero return array[0]
   if (index === 0) return array[0]
-  return addUpTo(array.slice(0, index - 1)) + array[index]
+  return addUpTo(array.slice(0, index - 1), index - 1) + array[index]
 } 
