@@ -33,10 +33,6 @@ function addUpTo(array, index) {
 } 
 
 function maxOf(array) {
-  // if array length is 1 return array[0]
-  // check first and last and return sub array minus the lesser 
-  // if they are equal return minus first
-  // return sub array removing smallest
   if (array.length === 1) return array[0]
   if (array[0] < array[array.length - 1]) {
     return maxOf(array.slice(1))
@@ -44,3 +40,15 @@ function maxOf(array) {
     return maxOf(array.slice(0, array.length - 1))
   }
 }
+
+function includesNumber(array, number) {
+  if (array.length === 0) {
+    return false
+  }
+  if (array[0] === number) {
+    return true
+  }
+  return includesNumber(array.slice(1))
+}
+
+
