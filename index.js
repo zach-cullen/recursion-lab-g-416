@@ -16,5 +16,5 @@ function reverseString(string) {
     return string
   }
   
-  return reverseString(string.substring(1, string.length) + string[0])
+  return reverseString(string.substring(1, string.length)) + string[0]
 }
