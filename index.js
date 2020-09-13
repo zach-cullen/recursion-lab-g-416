@@ -10,3 +10,7 @@ function printString(string) {
     return true
   }
 }
+
+function reverseString(string) {
+ 
+}
