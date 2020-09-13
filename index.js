@@ -43,6 +43,8 @@ function maxOf(array) {
   let first = array[0]
   let last = array[array.length - 1]
   if (first < last) {
-    return maxOf(array.slice(1, array.length))
+    return maxOf(array.slice(1))
+  } else {
+    
   }
 }
