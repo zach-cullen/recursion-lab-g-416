@@ -26,3 +26,10 @@ function isPalindrome(string) {
     return false
   }
 }
+
+function addUpTo(array, index) {
+  // start with sub index of array to index
+  // return index as index - 1
+  // return addUpTo sub index + array[index]
+  // if index is 0
+} 
