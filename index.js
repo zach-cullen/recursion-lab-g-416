@@ -37,12 +37,8 @@ function maxOf(array) {
   // check first and last and return sub array minus the lesser 
   // if they are equal return minus first
   // return sub array removing smallest
-  if (array.length === 1) {
-    return array[0]
-  }
-  let first = array[0]
-  let last = array[array.length - 1]
-  if (first < last) {
+  if (array.length === 1) return array[0]
+  if (array[0] < array[array.length - 1]) {
     return maxOf(array.slice(1))
   } else {
     return maxOf(array.slice(0, array.length - 1))
